@@ -15,16 +15,13 @@
     <div class="row">
 
         {% for item in mascotas %}
-            <div class="col-6 col-sm-4 col-md-3">
-                <div class="card text-center border-danger">
-                    <div class="card" style="width: 18rem;">
-                        <img src={{ item.foto.url }} class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ item.nombre }}</h5>
-                            <p class="card-text">{{ item.description }}</p>
-                            <a href="#" class="btn btn-outline-danger">Adoptame</a>
-                        </div>
-                    </div>
+
+            <div class="card-body" style="width: 18rem;">
+                <img class="card-img-top" alt="..." src={{ item.foto.url }}>
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.nombre }}</h5>
+                    <p class="card-text">{{ item.description }}</p>
+                    <a href="#" class="btn btn-outline-danger">Adoptame</a>
                 </div>
             </div>
 
